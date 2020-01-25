@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {User} from '../core/user.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -242,7 +243,7 @@ export class UserService {
   constructor() {
   }
 
-  public get() {
+  public get(): Array<User> {
     return this.users;
   }
 }
