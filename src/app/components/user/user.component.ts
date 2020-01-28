@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from '../service/user.service';
-import {User} from '../core/user.interface';
+import {UserService} from './user.service';
+import {User} from './user.interface';
 
 @Component({
   selector: 'app-user',
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.css']
+  templateUrl: './user.html',
+  styleUrls: ['./user.css']
 })
 export class UserComponent implements OnInit {
   public users: Array<User>;
